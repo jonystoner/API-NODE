@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import routes from "./routes/routes";
+import routesClients from "./routes/routesClients";
 
 class App {
 
@@ -27,7 +28,7 @@ class App {
 
     private routes (): void{
         this.express.use(routes) 
-
+        this.express.use(routesClients) 
     }
 }
 
