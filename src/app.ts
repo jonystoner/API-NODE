@@ -22,7 +22,7 @@ class App {
         this.express.use(cors())        
     } 
     private database (): void {
-        mongoose.connect('mongodb://localhost:27017/tsnode')
+        mongoose.connect('mongodb://localhost:27017')
     }
 
     private routes (): void{
