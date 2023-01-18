@@ -14,4 +14,5 @@ routes.post('/users', UserController.create)
 routes.get('/users/testes',UserController.get)
 routes.put('/users/update',UserController.update)
 
+
 export default routes

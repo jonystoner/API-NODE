@@ -27,7 +27,12 @@ export const UserV1Schema = new Schema({
     createdAt: {
         type: Date,
         default: Date.now
-    }
+    },
+    cu: {
+        type: Boolean,
+        select: false,
+        default: false
+    }   
 
 })
 
